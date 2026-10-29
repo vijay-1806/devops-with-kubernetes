@@ -28,3 +28,19 @@ and set PORT=3000.
 
 kubectl get pods
 kubectl logs deployment/todo-app
+
+## Exercise 1.4 - Declarative Deployment
+
+The Todo application is deployed using a Kubernetes
+Deployment manifest.
+
+### Deploy
+
+kubectl apply -f manifests/deployment.yaml
+
+### Verify
+
+kubectl get pods
+kubectl logs deployment/todo-app
+
+The application reads PORT=3000 from its environment.
