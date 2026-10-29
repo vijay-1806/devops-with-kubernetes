@@ -7,3 +7,4 @@ DevOps with Kubernetes course.
 
 - [Exercise 1.1 - Log Output](../../tree/1.1/log-output)
 - [Exercise 1.2 - Todo App](../../tree/1.2/todo-app)
+- [Exercise 1.3 - Log Output YAML](../../tree/1.3/log-output)
