@@ -44,3 +44,25 @@ kubectl get pods
 kubectl logs deployment/todo-app
 
 The application reads PORT=3000 from its environment.
+
+## Exercise 1.6 - NodePort Service
+
+The Todo application is accessible using a Kubernetes
+NodePort Service.
+
+### Deploy
+
+kubectl apply -f manifests/deployment.yaml
+kubectl apply -f manifests/service.yaml
+
+### Verify
+
+kubectl get pods
+kubectl get svc
+
+### Access
+
+http://localhost:8082
+
+Port mapping:
+Ubuntu 8082 -> NodePort 30080 -> Todo Pod 3000
